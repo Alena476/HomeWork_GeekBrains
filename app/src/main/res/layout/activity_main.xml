@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:textDirection="firstStrongRtl">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#AEEFDA"
+        android:backgroundTint="#9CE3CF"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:fontFamily="casual"
+        android:letterSpacing="0.5"
+        android:text="Lesson 1. Start."
+        android:textColor="#D83024"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C0F4EA"
+        android:hint="Введите ваше имя"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#EAAA7A"
+        android:shadowColor="#BCAB7A"
+        android:text="push me"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:icon="@drawable/ic_launcher_foreground"
+        app:iconTint="#7BDAAE" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:checked="true"
+        android:clickable="false"
+        android:fontFamily="casual"
+        android:text="Switch" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CheckBox" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="156dp"
+        android:background="#AFD3AC"
+        android:button="@android:drawable/ic_delete"
+        android:text="ToggleButton" />
+
+</LinearLayout>
+
